@@ -32,12 +32,12 @@ Once rank 10 is reached, each rank allows to prepare +1 meta magic spell within 
 'meta magician'
 #### possessions
 #### advanced skills
-2 secret signs - Opposite type 1  
-2 secret signs - Opposite type 2     
-2 meta magic  
+3 secret signs - Opposite type 1  
+3 secret signs - Opposite type 2     
+1 meta magic  
 2 random (Opposite type 1) spell  
 2 random (Opposite type 2) spell  
-2 random meta magic spell  
+1 random meta magic spell  
 #### special
 
 
