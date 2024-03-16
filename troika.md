@@ -3,6 +3,7 @@
 
 ## meta magic
 originally imagined for 'longshot city' and 'academies of the arcane', this compatible with Troika! role-playing game, or other games with magic.
+has not been play tested.
 
 ### advanced skill
 'meta magic'
