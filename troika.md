@@ -61,10 +61,12 @@ all sensible evidences and source of next spell are obscured for other magicians
 reduce roll checks for all detections by meta magic rank  
 
 **6. contained spell (3+Δ)**  
-allows to pack your next spell into meta container.  
-such spell can used at any time without additional costs or roll checks.
-rank <5: 1 spell
-rank <10: 2 spells
+allows to put up to X spells into tiny magical container.  
+such spells can be used later.  
+such container can be remotely activated at will.  
+rank <3: 1 spell  
+rank <5: 2 spells  
+rank <10: both spells can be activated at the same turn  
 
 ## License
 This is an independent production by romanthekat and is not affiliated with Melsonian Arts Council. 
