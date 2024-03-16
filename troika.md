@@ -42,23 +42,29 @@ Once rank 10 is reached, each rank allows to prepare +1 meta magic spell within 
 
 
 ### spells
-**powerful spell (2+Δ)**  
+**1. reliable spell (2+Δ)**  
 increases next spell roll check by meta magic rank 
 
-**everlasting spell (2+Δ)**  
+**2. everlasting spell (2+Δ)**  
 increases next spell duration by meta magic rank * 20 percents  
 
-**homed spell (2+Δ)**  
-next spell designated target up to meta magic rank * 20 meters away  
+**3. homing spell (3+Δ)**  
+next spell pursues target for to meta magic rank * 100 meters. 
 
-**repeating spell (4+Δ)**  
-rank <5: next spell effects apply 2 times, both positive and negative aspects  
-rank <10: next spells apply 3 times  
+**4. repeating spell (4+Δ)**  
+apply next spell effects X times, both positive and negative aspects
+rank <5: 2 times  
+rank <10: 3 times
 
-**obscured spell (1+Δ)**  
+**5. obscured spell (1+Δ)**  
 all sensible evidences and source of next spell are obscured for other magicians and magic sensing devices,  
 reduce roll checks for all detections by meta magic rank  
 
+**6. contained spell (3+Δ)**  
+allows to pack your next spell into meta container.  
+such spell can used at any time without additional costs or roll checks.
+rank <5: 1 spell
+rank <10: 2 spells
 
 ## License
 This is an independent production by romanthekat and is not affiliated with Melsonian Arts Council. 
