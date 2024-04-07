@@ -42,6 +42,9 @@ Once rank 10 is reached, each rank allows to prepare +1 meta magic spell within 
 
 
 ### spells
+**0. concentrated spell (2+Δ)** 
+reduce the spell radius X times increasing spell efficiency X times, where X is up to meta magic rank.
+
 **1. reliable spell (2+Δ)**  
 increases next spell roll check by meta magic rank 
 
