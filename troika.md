@@ -42,9 +42,6 @@ Once rank 10 is reached, each rank allows to prepare +1 meta magic spell within 
 
 
 ### spells
-**0. concentrated spell (2+Δ)** 
-reduce the spell radius X times increasing spell efficiency X times, where X is up to meta magic rank.
-
 **1. reliable spell (2+Δ)**  
 increases next spell roll check by meta magic rank 
 
@@ -63,7 +60,10 @@ rank <10: 3 times
 all sensible evidences and source of next spell are obscured for other magicians and magic sensing devices,  
 reduce roll checks for all detections by meta magic rank  
 
-**6. contained spell (3+Δ)**  
+**6. concentrated spell (2+Δ)** 
+reduce the spell radius X times increasing spell efficiency X times, where X is up to meta magic rank.
+
+**7. contained spell (3+Δ)**  
 allows to put up to X spells into tiny magical container.  
 such spells can be used later.  
 such container can be remotely activated at will.  
