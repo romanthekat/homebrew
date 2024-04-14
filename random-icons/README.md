@@ -13,4 +13,4 @@ Originally made as local version of [zero_dice](https://tangent-zero.com/zero_di
 
 ## TODO Extra features
 - customizable amount of icons to generate
-- tags/subtags for images, selection based on tags
+- tags/subtags for images, generation based on selected tags
