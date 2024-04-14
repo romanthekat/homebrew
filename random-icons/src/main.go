@@ -32,22 +32,22 @@ func main() {
 		iconsDirPath = argsWithoutProg[0]
 	}
 
+	grid := container.NewGridWithRows(1,
+		widget.NewButton("Roll", func() {
+			rerollAllCards(iconsPaths)
+		}),
+	)
+
 	cardWidgets = createCardWidgets()
+	for _, card := range cardWidgets {
+		grid.Add(card)
+	}
 
 	iconsPaths = readIconsPaths()
 	if len(iconsPaths) > 0 {
 		rerollAllCards(iconsPaths)
 	} else {
 		w.SetTitle("No icons found in ./icons and no path provided as argument value - the app won't work")
-	}
-
-	grid := container.NewGridWithRows(1,
-		widget.NewButton("Roll", func() {
-			rerollAllCards(iconsPaths)
-		}),
-	)
-	for _, card := range cardWidgets {
-		grid.Add(card)
 	}
 
 	w.SetContent(grid)
