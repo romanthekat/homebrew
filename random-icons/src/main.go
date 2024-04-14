@@ -14,10 +14,10 @@ import (
 	"strings"
 )
 
+var iconsDirPath = "./icons"
+
 var cardWidgets []*widget.Card
 var iconsPaths []string
-
-var iconsDirPath = "./icons"
 
 const sizeDimension = 128
 const maxTitleLengthLetters = 18
