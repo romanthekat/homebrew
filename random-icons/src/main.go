@@ -14,7 +14,7 @@ import (
 	"strings"
 )
 
-var cards []*widget.Card
+var cardWidgets []*widget.Card
 var iconsPaths []string
 
 var iconsDirPath = "./icons"
@@ -32,9 +32,9 @@ func main() {
 		iconsDirPath = argsWithoutProg[0]
 	}
 
-	cards = createCards()
+	cardWidgets = createCardWidgets()
 
-	iconsPaths = readIcons()
+	iconsPaths = readIconsPaths()
 	if len(iconsPaths) > 0 {
 		rerollAllCards(iconsPaths)
 	} else {
@@ -46,7 +46,7 @@ func main() {
 			rerollAllCards(iconsPaths)
 		}),
 	)
-	for _, card := range cards {
+	for _, card := range cardWidgets {
 		grid.Add(card)
 	}
 
@@ -55,7 +55,7 @@ func main() {
 	w.ShowAndRun()
 }
 
-func createCards() []*widget.Card {
+func createCardWidgets() []*widget.Card {
 	card1 := newCardWidget()
 	card2 := newCardWidget()
 	card3 := newCardWidget()
@@ -67,7 +67,7 @@ func createCards() []*widget.Card {
 }
 
 func rerollAllCards(icons []string) {
-	for _, card := range cards {
+	for _, card := range cardWidgets {
 		updateImage(card, icons)
 	}
 }
@@ -86,11 +86,7 @@ func updateImage(card *widget.Card, icons []string) {
 	card.SetSubTitle(getNameByImageFilename(imagePath))
 }
 
-func getRandom(list []string) string {
-	return list[rand.IntN(len(list))]
-}
-
-func readIcons() []string {
+func readIconsPaths() []string {
 	var result []string
 
 	err := filepath.WalkDir(iconsDirPath,
@@ -125,4 +121,8 @@ func getNameByImageFilename(path string) string {
 	}
 
 	return name
+}
+
+func getRandom(list []string) string {
+	return list[rand.IntN(len(list))]
 }
