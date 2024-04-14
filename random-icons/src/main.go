@@ -19,7 +19,7 @@ var iconsDirPath = "./icons"
 var cardWidgets []*widget.Card
 var iconsPaths []string
 
-const sizeDimension = 128
+const maxDimensionSize = 128
 const maxTitleLengthLetters = 18
 
 // as naive implementation as possible
@@ -74,7 +74,7 @@ func rerollAllCards(icons []string) {
 
 func newCardWidget() *widget.Card {
 	card := widget.NewCard("", "", nil)
-	card.Resize(fyne.NewSize(sizeDimension, sizeDimension))
+	card.Resize(fyne.NewSize(maxDimensionSize, maxDimensionSize))
 
 	return card
 }
@@ -108,7 +108,7 @@ func readIconsPaths() []string {
 func loadImage(path string) *canvas.Image {
 	image := canvas.NewImageFromFile(path)
 	image.FillMode = canvas.ImageFillContain
-	image.SetMinSize(fyne.NewSize(sizeDimension, sizeDimension))
+	image.SetMinSize(fyne.NewSize(maxDimensionSize, maxDimensionSize))
 
 	return image
 }
