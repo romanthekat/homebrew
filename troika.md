@@ -65,8 +65,8 @@ reduce roll checks for all detections by meta magic rank.
 Reduce the spell radius X times increasing spell efficiency up to X times, where X is up to meta magic rank.  
 
 **7. contained spell (3+Δ)**  
-Allows up to X spells to be put into into tiny magical container or engraved on an item, where X is up to meta magic rank.  
-Such spells can be activated later when touching an item by anyone.  
+Allows X spells to be put into into tiny magical container or engraved on an item, where X is up to meta magic rank.  
+Such spells can be activated later at any time, while having physical contact with a spell container.  
 Such spells can be remotely activated at will by the meta magic mage.  
 
 ## License
