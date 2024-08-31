@@ -1,8 +1,9 @@
 # cy_borg
 
-## 200¤ SmartGun mk2 
+## 200¤ SmartGun mk2
 - d6a (d10a with a SmartJack)  
-- can switch between booster mods and normal bullets on the flight
+- can switch between booster mods and normal bullets on the flight  
+	- some play the original SmartGun this way though
 	
 	
 	
