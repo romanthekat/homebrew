@@ -54,8 +54,8 @@ Next spell pursues target for up to meta magic rank * 100 meters.
 
 **4. repeating spell (4+Δ)**  
 Apply next spell effects X times, both positive and negative aspects.
-rank 1-3: 2 times  
-rank 3+: 3 times
+meta magic rank 1-2: 2 times  
+meta magic rank 3+: 3 times
 
 **5. obscured spell (1+Δ)**  
 All sensible evidences and source of next spell are obscured for other magicians and magic sensing devices,  
