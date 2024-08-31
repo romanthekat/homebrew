@@ -35,7 +35,7 @@ Meta magic rank cannot exceed other advanced magical skills.
 #### advanced skills
 3 secret signs - Opposite type 1  
 3 secret signs - Opposite type 2     
-1 meta magic  
+2 meta magic  
 2 random (Opposite type 1) spell  
 2 random (Opposite type 2) spell  
 1 random meta magic spell  
