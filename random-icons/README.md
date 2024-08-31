@@ -3,7 +3,7 @@ Simple gui app for randomly showing a bunch of icons, with bare minimum features
 
 ![screenshot](./screenshot.png)
 
-Originally made as local version of [zero_dice](https://tangent-zero.com/zero_dice/zero_dice.htm), using [game-icons](https://game-icons.net/) or other png images.  
+Originally made as a local version of [zero_dice](https://tangent-zero.com/zero_dice/zero_dice.htm), using [game-icons](https://game-icons.net/) or other png images.  
 
 ## How to use
 - `go run ./`
