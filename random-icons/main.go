@@ -18,6 +18,7 @@ var iconsDirPath = "./icons"
 
 var cardWidgets []*widget.Card
 var iconsPaths []string
+var icons []*canvas.Image
 
 const maxDimensionSize = 128
 const maxTitleLengthLetters = 18
@@ -32,9 +33,12 @@ func main() {
 		iconsDirPath = argsWithoutProg[0]
 	}
 
+	iconsPaths = readIconsPaths()
+	icons = readAllIcons(iconsPaths)
+
 	grid := container.NewGridWithRows(1,
 		widget.NewButton("Roll", func() {
-			rerollAllCards(iconsPaths)
+			rerollAllCards(icons)
 		}),
 	)
 
@@ -43,9 +47,8 @@ func main() {
 		grid.Add(card)
 	}
 
-	iconsPaths = readIconsPaths()
-	if len(iconsPaths) > 0 {
-		rerollAllCards(iconsPaths)
+	if len(icons) > 0 {
+		rerollAllCards(icons)
 	} else {
 		w.SetTitle("No icons found in ./icons and no path provided as argument value - the app won't work")
 	}
@@ -60,13 +63,11 @@ func createCardWidgets() []*widget.Card {
 	card2 := newCardWidget()
 	card3 := newCardWidget()
 	card4 := newCardWidget()
-	card5 := newCardWidget()
-	card6 := newCardWidget()
 
-	return []*widget.Card{card1, card2, card3, card4, card5, card6}
+	return []*widget.Card{card1, card2, card3, card4}
 }
 
-func rerollAllCards(icons []string) {
+func rerollAllCards(icons []*canvas.Image) {
 	for _, card := range cardWidgets {
 		updateImage(card, icons)
 	}
@@ -79,11 +80,11 @@ func newCardWidget() *widget.Card {
 	return card
 }
 
-func updateImage(card *widget.Card, icons []string) {
-	imagePath := getRandom(icons)
+func updateImage(card *widget.Card, icons []*canvas.Image) {
+	icon := getRandom(icons)
 
-	card.Image = loadImage(imagePath)
-	card.SetSubTitle(getNameByImageFilename(imagePath))
+	card.SetContent(icon)
+	card.SetSubTitle(getNameByImageFilename(icon.File))
 }
 
 func readIconsPaths() []string {
@@ -100,6 +101,16 @@ func readIconsPaths() []string {
 	)
 	if err != nil {
 		panic(err)
+	}
+
+	return result
+}
+
+func readAllIcons(iconsPaths []string) []*canvas.Image {
+	var result []*canvas.Image
+
+	for _, path := range iconsPaths {
+		result = append(result, loadImage(path))
 	}
 
 	return result
@@ -123,6 +134,6 @@ func getNameByImageFilename(path string) string {
 	return name
 }
 
-func getRandom(list []string) string {
+func getRandom(list []*canvas.Image) *canvas.Image {
 	return list[rand.IntN(len(list))]
 }
